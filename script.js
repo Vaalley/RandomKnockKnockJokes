@@ -1,2 +1,9 @@
-let a = 10;
-console.log(a * 2);
+let components = {
+  who: ['Who\'s there?', 'Who is it?', 'Who are you?', 'Who is there?', 'Who is here?'],
+  character: ['Goliath', 'Broccoli', 'Wooden shoe', 'Amish', 'Boo', 'Atch', 'A little old lady', 'Cows go','Harry', 'Cash', 'Big interrupting cow', 'Canoe', 'Lettuce', 'Mikey', 'Stopwatch', 'I am', 'Ice cream', 'Doctor', 'Yah', 'Nana', 'Justin', 'Theodore', 'Tennis', 'To', 'Owls say', 'Kanga', 'Nuisance', 'Doris', 'Orange', 'Candice', 'Spell', 'Alpaca', 'Tank', 'Cargo', 'Leaf', 'Isabel', 'Dishes', 'Europe'],
+  joke: ['Goliath down, you look-eth tired!', 'Broccoli doesn’t have a last name, silly.', 'Wooden shoe like to hear another joke?', 'You don’t look like a shoe!', 'Why are you crying?', 'Bless you!', 'I didn’t know you could yodel!', 'No silly, cows go MOO!','Harry up and answer the door!', 'No thanks, but I’ll take a peanut if you have one!', 'MOOOOOOO!', 'Canoe come out and play with me?', 'Lettuce in, it’s cold out here!', 'Mikey doesn’t fit in the key hole!', 'Stopwatch you’re doing and let me in!', 'You don’t know who you are?', 'Ice cream if you don’t let me in!', 'You’ve seen that TV show?', 'No, I prefer google.', 'Nana your business!', 'Justin the neighborhood and thought I’d come over!', 'Theodore who? Theodore is stuck and it won’t open!', 'Tennis five plus five.', 'It’s to whom.', 'Yes, they do!', 'No, it’s kangaroo!', 'What’s new since yesterday?', 'Door is locked, that’s why I’m knocking!', 'Orange you going to open the door?', 'Candice door open, or what?', 'Okay, w-h-o.', 'Alpaca the suitcase, you load the car!', 'You’re welcome!', 'No, car go BEEP BEEP!', 'Leaf me alone!', 'Isabel working?  I had to knock!', 'Dishes the police!  Open up!', 'No, YOU\'re a poo!']
+};
+const randomWho = Math.floor(Math.random() * components.who.length);
+const randomChar = Math.floor(Math.random() * components.character.length);
+
+console.log (`Knock, knock! ${components.who[randomWho]} ${components.character[randomChar]}. ${components.character[randomChar]} who? ${components.joke[randomChar]}`);
